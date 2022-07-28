@@ -11,8 +11,7 @@ import (
 
 func main() {
 
-	var allnumber []string = readFile()
-	IsNumberPrimee(allnumber)
+	IsNumberPrimee(readFile())
 }
 
 func IsNumberPrimee(value []string) {
