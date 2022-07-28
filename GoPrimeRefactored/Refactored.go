@@ -29,16 +29,16 @@ func IsNumberPrimee(value []string) {
 			}
 		}
 		if sayac == 0 {
-			fmt.Println(deger, "Prime number")
+			fmt.Println(deger, "=>Prime")
 		} else {
-			fmt.Println(deger, "Prime number degil")
+			fmt.Println(deger, "=>NotPrime")
 		}
 
 	}
 }
 
 func readFile() []string {
-	readFile, err := os.Open("sayilar.txt")
+	readFile, err := os.Open("numbers.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
