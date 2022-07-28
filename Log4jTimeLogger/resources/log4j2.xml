@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="FileName">./logs</Property>
+		<Property name="MaxFileDay">1</Property>
+		<Property name="MaxFileSize">1</Property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile name="File"
+			filePattern="${FileName}/timer_%d{dd_MM_yyyy }.log">
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n
+				</pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="${MaxFileSize}" />
+		</RollingFile>
+
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<DefaultRolloverStrategy
+				max="${MaxFileDay}" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+
+</Configuration>
