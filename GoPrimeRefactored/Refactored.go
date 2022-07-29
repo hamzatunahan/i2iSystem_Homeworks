@@ -10,35 +10,56 @@ import (
 )
 
 func main() {
-
-	IsNumberPrimee(readFile())
+	var filename string = "numbers.txt"
+	var FileDetails []string = readFile(filename)
+	WriteFileIsPrime(FileDetails)
 }
 
-func IsNumberPrimee(value []string) {
-	var sayac int = 0
+func WriteFileIsPrime(read []string) {
+	WriteFile, err := os.Create("results.txt")
+	Error(err)
+	defer WriteFile.Close()
 
-	for i := 0; i < len(value); i++ {
-		sayac = 0
-		deger, err := strconv.Atoi(value[i]) // string degeri integer degerine donusturur
-		if err != nil {
-			panic(err)
-		}
-		for i := 2; i <= int(math.Floor(float64(deger)/2)); i++ {
-			if deger%i == 0 {
-				sayac++
-			}
-		}
-		if sayac == 0 {
-			fmt.Println(deger, "=>Prime")
-		} else {
-			fmt.Println(deger, "=>NotPrime")
-		}
-
+	for i := 0; i < len(read); i++ {
+		value, err := strconv.Atoi(read[i])
+		Error(err)
+		FileWriter := fmt.Sprintf("%d%s", value, IsPrime(value))
+		WriteFile.WriteString(FileWriter + "\n")
 	}
 }
 
-func readFile() []string {
-	readFile, err := os.Open("numbers.txt")
+func Error(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
+
+func IsPrime(data int) string {
+	var counter int = 0
+	for i := 2; i <= int(math.Floor(float64(data)/2)); i++ {
+		if data%i == 0 {
+			counter++
+		}
+	}
+	if counter == 0 {
+		PrintPrime(counter, data)
+		return "=>Prime"
+	} else {
+		PrintPrime(counter, data)
+		return "=>NotPrime"
+	}
+}
+
+func PrintPrime(counter int, value int) {
+	if counter == 0 {
+		fmt.Println(value, "=>Prime")
+	} else {
+		fmt.Println(value, "=>NotPrime")
+	}
+}
+
+func readFile(filename string) []string {
+	readFile, err := os.Open(filename)
 	if err != nil {
 		log.Fatal(err)
 	}

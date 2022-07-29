@@ -1,0 +1,6 @@
+1234=>NotPrime
+152=>NotPrime
+523=>Prime
+357=>NotPrime
+353=>Prime
+13=>Prime
