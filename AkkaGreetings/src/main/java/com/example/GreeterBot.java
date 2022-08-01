@@ -24,7 +24,7 @@ public class GreeterBot extends AbstractBehavior<Greeter.Greeted> {
 
     private Behavior<Greeter.Greeted> onGreeted(Greeter.Greeted message) {
         greetingCounter++;
-        getContext().getLog().info("Greeting {} for {}", greetingCounter, message.whom);
+        getContext().getLog().info("Aleykum Selam");
         if (greetingCounter == max) {
             return Behaviors.stopped();
         } else {

@@ -67,7 +67,7 @@ public class Greeter extends AbstractBehavior<Greeter.Greet> {
   }
 
   private Behavior<Greet> onGreet(Greet command) {
-    getContext().getLog().info("Hello {}!", command.whom);
+    getContext().getLog().info("Sa");
     //#greeter-send-message
     command.replyTo.tell(new Greeted(command.whom, getContext().getSelf()));
     //#greeter-send-message
