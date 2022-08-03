@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/cache-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-3-connector-common-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-3-connector-interface-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-distribution-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-hibernate53-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-avro-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-cdc-debezium-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-cdc-mysql-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-cdc-postgres-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-csv-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-elasticsearch-7-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-files-azure-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-files-gcs-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-files-s3-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-grpc-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-hadoop-all-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-kafka-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-kinesis-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-protobuf-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-python-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-jet-s3-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-sql-5.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/hazelcast-wm-4.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/jansi-2.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/jline-reader-3.21.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/jline-terminal-3.21.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/jline-terminal-jansi-3.21.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/jmx_prometheus_javaagent-0.14.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/log4j-api-2.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/log4j-core-2.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/log4j-layout-template-json-2.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/log4j-slf4j-impl-2.17.1.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/picocli-4.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/hazelcast/hazelcast-5.1.2/lib/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/HAMZA/Downloads/ojdbc10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
